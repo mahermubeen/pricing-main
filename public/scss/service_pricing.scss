@@ -1,0 +1,226 @@
+.service-pricing-wrapper {
+  .rows {
+    border: 1px solid #b3b3b3;
+  }
+  .service-heading {
+    padding: 70px;
+    text-align: center;
+    h1 {
+      font-size: 34px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 56px;
+    }
+  }
+  .service-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 80px;
+    .rows {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      padding: 20px;
+      span,
+      p {
+        font-size: 23px;
+        line-height: 32px;
+      }
+    }
+    .row8 {
+      padding: 52px;
+    }
+    .row9 {
+      background: #b3b3b3;
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+    }
+    .service-inner-head {
+      text-align: center;
+      background: url(../images/gray-bg.png) no-repeat;
+      width: 331px;
+      height: 316px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      img {
+      }
+      h3 {
+        font-size: 25px;
+        line-height: 36px;
+        padding: 20px 0 15px;
+      }
+      h1 {
+        font-size: 45px;
+        line-height: 56px;
+      }
+    }
+    .free-version {
+      .service-inner-head {
+        background: url(../images/gray-bg.png) no-repeat;
+        h3 {
+          padding: 20px 0 22px !important;
+        }
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+      }
+    }
+    .basic-paid {
+      .service-inner-head {
+        background: url(../images/blue-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row7 {
+          padding: 52px;
+        }
+        .row9 {
+          background: #57a8f4;
+        }
+      }
+    }
+    .exp-paid {
+      .service-inner-head {
+        background: url(../images/yellow-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row9 {
+          background: #f5c84a;
+        }
+        .row7 {
+          padding: 36px 20px;
+        }
+      }
+    }
+    .prem-paid {
+      .service-inner-head {
+        background: url(../images/red-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row8 {
+          padding: 20px !important;
+        }
+        .row9 {
+          background: #d9463f;
+        }
+      }
+    }
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 1400px) {
+  .service-pricing-wrapper {
+    .service-body {
+      grid-template-columns: 331px 331px 331px;
+      justify-content: center;
+      .service-inner-head {
+        width: auto;
+        background-size: cover !important;
+      }
+      .free-version {
+        margin: 0 0 20px;
+      }
+      .basic-paid {
+        margin: 0 0 20px;
+      }
+      .exp-paid {
+        margin: 0 0 20px;
+      }
+      .prem-paid {
+        .service-inner-body {
+          .row8 {
+            display: none;
+          }
+        }
+      }
+      .exp-paid {
+        .service-inner-body {
+          .row7 {
+            padding: 36px 20px;
+          }
+        }
+      }
+      .basic-paid {
+        .service-inner-body {
+          .row7 {
+            padding: 20px !important;
+            img {
+              display: block !important;
+            }
+            p {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .service-pricing-wrapper {
+    .service-body {
+      grid-template-columns: 331px 331px;
+      .row8 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .service-pricing-wrapper {
+    .service-body {
+      grid-template-columns: 331px;
+    }
+    .service-heading {
+      padding: 70px 0;
+    }
+  }
+}

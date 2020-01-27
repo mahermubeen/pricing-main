@@ -1,0 +1,175 @@
+.unlimited-web {
+  text-align: center;
+  .rows {
+    border: 1px solid #b3b3b3;
+  }
+  .service-heading {
+    padding: 70px;
+    text-align: center;
+    h1 {
+      font-size: 34px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 56px;
+    }
+  }
+  .service-body {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    padding: 80px 0 80px;
+    .row1 {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #b3b3b3;
+    }
+    .rows {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      padding: 20px;
+      span,
+      p {
+        font-size: 23px;
+        line-height: 32px;
+      }
+    }
+    .row8 {
+      padding: 20px;
+    }
+    .row9 {
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+    }
+    .service-inner-head {
+      text-align: center;
+      height: 441px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-size: cover !important;
+      .small-para {
+        font-size: 23px;
+        line-height: 28px;
+        padding: 0 15px;
+      }
+      h3 {
+        font-size: 25px;
+        line-height: 36px;
+        padding: 20px 0 15px;
+      }
+      h1 {
+        font-size: 45px;
+        line-height: 56px;
+      }
+    }
+    .web-view {
+      .row1 {
+        padding: 36px 20px;
+      }
+      .row9 {
+        background: #eb79a4;
+      }
+      .service-inner-head {
+        background: url(../images/pink-bg.png) no-repeat;
+        h3 {
+          padding: 20px 0 22px !important;
+        }
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+      }
+    }
+    .abmob-applied {
+      .service-inner-head {
+        background: url(../images/purple-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row9 {
+          background: #9678d5;
+        }
+      }
+    }
+    .customatio {
+      .service-inner-head {
+        background: url(../images/blue-bg-lg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row2 {
+          border: 1px solid #b3b3b3;
+          padding: 36px 20px;
+        }
+      }
+    }
+  }
+}
+
+//responsive
+
+@media only screen and (max-width: 1400px) {
+  .unlimited-web {
+    .service-body {
+      grid-template-columns: 440px 440px;
+      justify-content: center;
+      .web-view {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .unlimited-web {
+    .service-body {
+      grid-template-columns: 440px;
+      .abmob-applied {
+        margin: 0 0 20px;
+      }
+    }
+    .service-heading {
+      padding: 70px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .unlimited-web {
+    .service-body {
+      grid-template-columns: 340px;
+    }
+  }
+}

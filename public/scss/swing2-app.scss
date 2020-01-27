@@ -1,0 +1,176 @@
+.swing2-app {
+  .rows {
+    border: 1px solid #b3b3b3;
+  }
+  .service-heading {
+    padding: 70px;
+    text-align: center;
+    h1 {
+      font-size: 34px;
+      line-height: 56px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 56px;
+    }
+  }
+  .service-body {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    padding-bottom: 80px;
+    .row1 {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #b3b3b3;
+    }
+    .rows {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      padding: 20px;
+      span,
+      p {
+        font-size: 23px;
+        line-height: 32px;
+      }
+    }
+    .row8 {
+      padding: 20px;
+    }
+    .row9 {
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      }
+    }
+    .service-inner-head {
+      text-align: center;
+      height: 441px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-size: cover !important;
+      .small-para {
+        font-size: 23px;
+        line-height: 28px;
+        padding: 10px 20px;
+      }
+      h3 {
+        font-size: 25px;
+        line-height: 36px;
+        padding: 20px 0 15px;
+      }
+      h1 {
+        font-size: 45px;
+        line-height: 56px;
+      }
+    }
+    .budget-pack {
+      .row9 {
+        background: #ee9344;
+      }
+      .service-inner-head {
+        background: url(../images/orange-bg.png) no-repeat;
+        h3 {
+          padding: 20px 0 22px !important;
+        }
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+      }
+    }
+    .abmob-pack {
+      .service-inner-head {
+        background: url(../images/light-green-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row9 {
+          background: #76bf9a;
+        }
+        .row8 {
+          padding: 36px !important;
+        }
+      }
+    }
+    .large-pack {
+      .service-inner-head {
+        background: url(../images/dark-blue-bg.png) no-repeat;
+      }
+      .service-inner-body {
+        .text {
+          font-size: 23px;
+          line-height: 32px;
+        }
+        .bold-text {
+          font-size: 23px;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        .row9 {
+          background: #34a7b2;
+        }
+        .row8 {
+          padding: 36px !important;
+        }
+      }
+    }
+  }
+}
+
+// responsive
+
+@media only screen and (max-width: 1400px) {
+  .swing2-app {
+    .service-body {
+      grid-template-columns: 440px 440px;
+      justify-content: center;
+      .budget-pack {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .swing2-app {
+    .service-body {
+      grid-template-columns: 440px;
+      .abmob-pack {
+        margin: 0 0 20px;
+      }
+    }
+    .service-heading {
+      padding: 70px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .swing2-app {
+    .service-body {
+      grid-template-columns: 340px;
+    }
+  }
+}
